@@ -8,14 +8,78 @@
   <meta name="author" content="cassidy diamond">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>15418 project</title>
+  <title>15418 Project</title>
+
+  <style>
+    :root {
+      --bg: #1c826a;
+      --link: #f0809b;
+      --text: #f4f4f4;
+    }
+    html, body {
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      color: var(--text);
+      background: var(--bg);
+      font-size: 1.2em;
+      line-height: 1.2;
+      padding: 0 1rem;
+    }
+    a, a:visited, a:hover {
+      color: var(--link);
+      font-weight: bold;
+      font-size: 1.1em;
+    }
+    a:hover {
+      text-shadow: 1rem 1rem var(--text);
+      letter-spacing: 2px;
+    }
+    main {
+      max-width: 45rem;
+      margin: 1.5rem auto;
+      border: 2px solid var(--text);
+      padding: 0.75rem 1.5rem;
+      box-sizing: border-box;
+    }
+    .marquee {
+      font-family: monospace;
+      font-size: 1.2em;
+      display: block;
+      text-align: center;
+    }
+    main h1 {
+      margin: 0.5rem 0;
+      text-align: center;
+    }
+    .shadow {
+      text-shadow: 2px 2px var(--link);
+      font-weight: bold;
+      position: relative;
+    }
+    .shadow:hover::before {
+      letter-spacing: 2px;
+      content: attr(data-text);
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      white-space: nowrap;
+      background: var(--bg);
+    }
+  </style>
 
 </head>
 
 <body>
   <main>
-    <h1>Title:</h1>
-    <p>url: </p>
+    <span class='marquee'>~* 15418 Project *~</span>
+    <h1>Parallel Monte Carlo Path Tracing</h1>
+    <p><span class='shadow' data-text="Cassidy Diamond">Cassidy Diamond</span> and <span class='shadow' data-text="Akintayo Salu">Akintayo Salu</span></p>
+    <ul>
+      <li><a href="proposal.pdf">Project Proposal</a></li>
+    </ul>
     <!--<h2>summary></h2>
     <p>lorem ipsum</p>
     <h2>background</h2>
