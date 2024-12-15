@@ -1,5 +1,4 @@
 *.ppm
-*.gif
 render
 render_mpi
 demo
