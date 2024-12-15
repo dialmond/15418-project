@@ -78,6 +78,15 @@
       max-width: 100%;
       box-sizing: border-box;
     }
+
+    details {
+      margin-top: 1rem;
+      border: 1.5px dashed var(--link);
+    }
+    summary {
+      padding: 0.5rem;
+      cursor: pointer;
+    }
   </style>
 
 </head>
@@ -92,17 +101,23 @@
       <li>
         <div>
           <a href="milestone.pdf">Milestone Report</a>
-          <img src="media/cool.png"/>
-          <img src="media/grid_640x360.gif"/>
-          <img src="media/materials_640x360.gif"/>
+          <details>
+            <summary>milestone images</summary>
+              <img src="media/cool.png" loading="lazy"/>
+              <img src="media/grid_640x360.gif" loading="lazy"/>
+              <img src="media/materials_640x360.gif" loading="lazy"/>
+          </details>
         </div>
       </li>
       <li>
         <div>
           <a href="final_report.pdf">Final Report</a>
-          <img src="media/gifs/gifsbiglittle_640x360.gif"/>
-          <img src="media/gifs/gifscolor_grid_640x360.gif"/>
-          <img src="media/gifs/gifsmaterials_640x360.gif"/>
+          <details>
+            <summary>final report images</summary>
+            <img src="media/gifs/gifsbiglittle_640x360.gif" loading="lazy"/>
+            <img src="media/gifs/gifscolor_grid_640x360.gif" loading="lazy"/>
+            <img src="media/gifs/gifsmaterials_640x360.gif" loading="lazy"/>
+          </details>
         </div>
       </li>
     </ul>
