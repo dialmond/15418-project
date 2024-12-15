@@ -1,0 +1,59 @@
+# OMP Rotation ########################################################
+## 8 core ####################################
+### simple #################
+rendering scene: simple
+threads: 8
+image_width: 640
+samples_per_pixel: 64
+rotation frames: 30
+Computation time (simple): 56.6995088360 s
+Total time: 56.6995438450 s
+
+### materials #################
+rendering scene: materials
+threads: 8
+image_width: 640
+samples_per_pixel: 64
+rotation frames: 30
+Computation time (materials): 116.1467873500 s
+Total time: 116.1468306930 s
+
+### grid #################
+rendering scene: grid
+threads: 8
+image_width: 640
+samples_per_pixel: 64
+rotation frames: 30
+Computation time (grid): 78.7412383350 s
+Total time: 78.7412755810 s
+
+### biglittle #################
+rendering scene: biglittle
+threads: 8
+image_width: 640
+samples_per_pixel: 64
+rotation frames: 30
+Computation time (biglittle): 513.7075404790 s
+Total time: 513.7076430860 s
+
+### color_grid #################
+rendering scene: color_grid
+threads: 8
+image_width: 640
+samples_per_pixel: 64
+rotation frames: 30
+Computation time (color_grid): 1092.0037225480 s
+Total time: 1092.0037984390 s
+
+===========
+## 1 core ####################################
+### simple #################
+rendering scene: simple
+threads: 1
+image_width: 640
+samples_per_pixel: 64
+rotation frames: 30
+Computation time (simple): 45.4212176320 s
+Total time: 45.4212503970 s
+
+### materials #################

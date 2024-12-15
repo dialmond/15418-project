@@ -1,0 +1,1049 @@
+# OMP SAMPLES ########################################################
+rendering scene: materials
+threads: 1
+image_width: 640
+samples_per_pixel: 8
+Computation time (materials): 2.3276648710 s
+Total time: 2.3279232080 s
+
+rendering scene: grid
+threads: 1
+image_width: 640
+samples_per_pixel: 8
+Computation time (grid): 1.5390506400 s
+Total time: 1.5391394180 s
+
+rendering scene: biglittle
+threads: 1
+image_width: 640
+samples_per_pixel: 8
+Computation time (biglittle): 11.9377221840 s
+Total time: 11.9378883810 s
+
+rendering scene: color_grid
+threads: 1
+image_width: 640
+samples_per_pixel: 8
+Computation time (color_grid): 26.5182939310 s
+Total time: 26.5184388650 s
+
+rendering scene: color_grid
+threads: 1
+image_width: 640
+samples_per_pixel: 64
+Computation time (color_grid): 211.3604998820 s
+Total time: 211.3606632070 s
+
+rendering scene: kiss
+threads: 1
+image_width: 640
+samples_per_pixel: 8
+Computation time (kiss): 0.1460967110 s
+Total time: 0.1461728690 s
+
+rendering scene: kiss
+threads: 1
+image_width: 640
+samples_per_pixel: 64
+Computation time (kiss): 1.1569976560 s
+Total time: 1.1570808430 s
+
+rendering scene: kiss
+threads: 1
+image_width: 640
+samples_per_pixel: 256
+Computation time (kiss): 4.6002877020 s
+Total time: 4.6003707780 s
+
+rendering scene: kiss
+threads: 1
+image_width: 640
+samples_per_pixel: 512
+Computation time (kiss): 9.1951804110 s
+Total time: 9.1952710560 s
+
+rendering scene: simple
+threads: 8
+image_width: 640
+samples_per_pixel: 8
+Computation time (simple): 0.2259505650 s
+Total time: 0.2260397170 s
+
+rendering scene: simple
+threads: 8
+image_width: 640
+samples_per_pixel: 64
+Computation time (simple): 1.7843720900 s
+Total time: 1.7844970050 s
+
+rendering scene: simple
+threads: 8
+image_width: 640
+samples_per_pixel: 256
+Computation time (simple): 7.2893289810 s
+Total time: 7.2894486840 s
+
+rendering scene: simple
+threads: 8
+image_width: 640
+samples_per_pixel: 512
+Computation time (simple): 13.8834325190 s
+Total time: 13.8835570590 s
+
+rendering scene: materials
+threads: 8
+image_width: 640
+samples_per_pixel: 8
+Computation time (materials): 0.4124824910 s
+Total time: 0.4126090420 s
+
+rendering scene: materials
+threads: 8
+image_width: 640
+samples_per_pixel: 64
+Computation time (materials): 3.2000598360 s
+Total time: 3.2002321080 s
+
+rendering scene: materials
+threads: 8
+image_width: 640
+samples_per_pixel: 256
+Computation time (materials): 15.4037269520 s
+Total time: 15.4038790390 s
+
+rendering scene: materials
+threads: 8
+image_width: 640
+samples_per_pixel: 512
+Computation time (materials): 34.5413188630 s
+Total time: 34.5414512700 s
+
+rendering scene: grid
+threads: 8
+image_width: 640
+samples_per_pixel: 8
+Computation time (grid): 0.2947883410 s
+Total time: 0.2949259180 s
+
+rendering scene: grid
+threads: 8
+image_width: 640
+samples_per_pixel: 64
+Computation time (grid): 2.4149420240 s
+Total time: 2.4150503550 s
+
+rendering scene: grid
+threads: 8
+image_width: 640
+samples_per_pixel: 256
+Computation time (grid): 9.9127117470 s
+Total time: 9.9128375970 s
+
+rendering scene: grid
+threads: 8
+image_width: 640
+samples_per_pixel: 512
+Computation time (grid): 20.2762588740 s
+Total time: 20.2763984560 s
+
+rendering scene: biglittle
+threads: 8
+image_width: 640
+samples_per_pixel: 8
+Computation time (biglittle): 1.9907296180 s
+Total time: 1.9908972360 s
+
+rendering scene: biglittle
+threads: 8
+image_width: 640
+samples_per_pixel: 64
+Computation time (biglittle): 16.0640480880 s
+Total time: 16.0642442730 s
+
+rendering scene: biglittle
+threads: 8
+image_width: 640
+samples_per_pixel: 256
+Computation time (biglittle): 64.6086072320 s
+Total time: 64.6088332580 s
+
+rendering scene: biglittle
+threads: 8
+image_width: 640
+samples_per_pixel: 512
+Computation time (biglittle): 128.7320501810 s
+Total time: 128.7322645230 s
+
+rendering scene: color_grid
+threads: 8
+image_width: 640
+samples_per_pixel: 8
+Computation time (color_grid): 4.1032583750 s
+Total time: 4.1034054370 s
+
+rendering scene: color_grid
+threads: 8
+image_width: 640
+samples_per_pixel: 64
+Computation time (color_grid): 32.8156052790 s
+Total time: 32.8158018940 s
+
+rendering scene: kiss
+threads: 8
+image_width: 640
+samples_per_pixel: 8
+Computation time (kiss): 0.2323473020 s
+Total time: 0.2325096930 s
+
+rendering scene: kiss
+threads: 8
+image_width: 640
+samples_per_pixel: 64
+Computation time (kiss): 1.9415640100 s
+Total time: 1.9416564510 s
+
+rendering scene: kiss
+threads: 8
+image_width: 640
+samples_per_pixel: 256
+Computation time (kiss): 7.7755045800 s
+Total time: 7.7756531970 s
+
+rendering scene: kiss
+threads: 8
+image_width: 640
+samples_per_pixel: 512
+Computation time (kiss): 15.4769027310 s
+Total time: 15.4770529100 s
+
+rendering scene: color_grid
+threads: 8
+image_width: 640
+samples_per_pixel: 256
+Computation time (color_grid): 131.6985774110 s
+Total time: 131.6987520410 s
+
+rendering scene: color_grid
+threads: 8
+image_width: 640
+samples_per_pixel: 512
+Computation time (color_grid): 262.7282428510 s
+Total time: 262.7284185040 s
+
+rendering scene: color_grid
+threads: 1
+image_width: 640
+samples_per_pixel: 256
+Computation time (color_grid): 847.9071965700 s
+Total time: 847.9073636860 s
+
+rendering scene: color_grid
+threads: 1
+image_width: 640
+samples_per_pixel: 512
+Computation time (color_grid): 1695.8587135660 s
+Total time: 1695.8588763290 s
+
+
+
+# MPI SAMPLES ########################################################
+## 1 core ####################################
+### simple #################
+rendering scene: simple
+threads: 1
+threads: 1
+image_width: 640
+samples_per_pixel: 8
+Computation time (simple): 0.2240498900 s
+Total time: 0.5679721900 s
+
+rendering scene: simple
+threads: 1
+threads: 1
+image_width: 640
+samples_per_pixel: 64
+Computation time (simple): 1.5376566850 s
+Total time: 1.8022283080 s
+
+rendering scene: simple
+threads: 1
+threads: 1
+image_width: 640
+samples_per_pixel: 256
+Computation time (simple): 6.0312238930 s
+Total time: 6.3181392490 s
+
+rendering scene: simple
+threads: 1
+threads: 1
+image_width: 640
+samples_per_pixel: 512
+Computation time (simple): 12.0256184910 s
+Total time: 12.3127400660 s
+
+### materials #################
+rendering scene: materials
+threads: 1
+threads: 1
+image_width: 640
+samples_per_pixel: 8
+Computation time (materials): 2.3640017960 s
+Total time: 2.6499472310 s
+
+rendering scene: materials
+threads: 1
+threads: 1
+image_width: 640
+samples_per_pixel: 64
+Computation time (materials): 18.6364313810 s
+Total time: 18.8997963170 s
+
+rendering scene: materials
+threads: 1
+threads: 1
+image_width: 640
+samples_per_pixel: 256
+Computation time (materials): 74.2465125160 s
+Total time: 74.5143795440 s
+
+rendering scene: materials
+threads: 1
+threads: 1
+image_width: 640
+samples_per_pixel: 512
+Computation time (materials): 148.7421629750 s
+Total time: 149.0059680620 s
+
+### grid #################
+rendering scene: grid
+threads: 1
+threads: 1
+image_width: 640
+samples_per_pixel: 8
+Computation time (grid): 1.5633907210 s
+Total time: 1.8494929570 s
+
+rendering scene: grid
+threads: 1
+threads: 1
+image_width: 640
+samples_per_pixel: 64
+Computation time (grid): 12.2592454760 s
+Total time: 12.5454736520 s
+
+rendering scene: grid
+threads: 1
+threads: 1
+image_width: 640
+samples_per_pixel: 256
+Computation time (grid): 48.8396706350 s
+Total time: 49.1113844140 s
+
+rendering scene: grid
+threads: 1
+threads: 1
+image_width: 640
+samples_per_pixel: 512
+Computation time (grid): 97.8191489560 s
+Total time: 98.1015689250 s
+
+### biglittle #################
+rendering scene: biglittle
+threads: 1
+threads: 1
+image_width: 640
+samples_per_pixel: 8
+Computation time (biglittle): 11.9110232520 s
+Total time: 12.1944022230 s
+
+rendering scene: biglittle
+threads: 1
+threads: 1
+image_width: 640
+samples_per_pixel: 64
+Computation time (biglittle): 94.9711792860 s
+Total time: 95.2358487820 s
+
+rendering scene: biglittle
+threads: 1
+threads: 1
+image_width: 640
+samples_per_pixel: 256
+Computation time (biglittle): 380.0609132510 s
+Total time: 380.3351194210 s
+
+rendering scene: biglittle
+threads: 1
+threads: 1
+image_width: 640
+samples_per_pixel: 512
+Computation time (biglittle): 759.0965193410 s
+Total time: 759.3811474000 s
+
+### color_grid #################
+rendering scene: color_grid
+threads: 1
+threads: 1
+image_width: 640
+samples_per_pixel: 8
+Computation time (color_grid): 26.2795487630 s
+Total time: 26.5473432070 s
+
+rendering scene: color_grid
+threads: 1
+threads: 1
+image_width: 640
+samples_per_pixel: 64
+Computation time (color_grid): 216.3995175880 s
+Total time: 216.6648234550 s
+
+rendering scene: color_grid
+threads: 1
+threads: 1
+image_width: 640
+samples_per_pixel: 256
+Computation time (color_grid): 840.9410399800 s
+Total time: 841.2179557050 s
+
+rendering scene: color_grid
+threads: 1
+threads: 1
+image_width: 640
+samples_per_pixel: 512
+Computation time (color_grid): 1683.4888050640 s
+Total time: 1683.7759241920 s
+
+### kiss #################
+rendering scene: kiss
+threads: 1
+threads: 1
+image_width: 640
+samples_per_pixel: 8
+Computation time (kiss): 0.1842322020 s
+Total time: 0.4571218410 s
+
+rendering scene: kiss
+threads: 1
+threads: 1
+image_width: 640
+samples_per_pixel: 64
+Computation time (kiss): 1.2085301670 s
+Total time: 1.4735395690 s
+
+rendering scene: kiss
+threads: 1
+threads: 1
+image_width: 640
+samples_per_pixel: 256
+Computation time (kiss): 4.7132258590 s
+Total time: 5.0005507240 s
+
+rendering scene: kiss
+threads: 1
+threads: 1
+image_width: 640
+samples_per_pixel: 512
+Computation time (kiss): 9.4725545200 s
+Total time: 9.7572605890 s
+
+===========
+## 8 core ####################################
+### simple #################
+rendering scene: simple
+threads: 1
+threads: 8
+image_width: 640
+samples_per_pixel: 8
+Computation time (simple): 0.0382497160 s
+Total time: 0.3310162750 s
+
+rendering scene: simple
+threads: 1
+threads: 8
+image_width: 640
+samples_per_pixel: 64
+Computation time (simple): 0.2056888100 s
+Total time: 0.4845497470 s
+
+rendering scene: simple
+threads: 1
+threads: 8
+image_width: 640
+samples_per_pixel: 256
+Computation time (simple): 0.8061731920 s
+Total time: 1.1110311870 s
+
+rendering scene: simple
+threads: 1
+threads: 8
+image_width: 640
+samples_per_pixel: 512
+Computation time (simple): 1.5935536430 s
+Total time: 1.9156928680 s
+
+### materials #################
+rendering scene: materials
+threads: 1
+threads: 8
+image_width: 640
+samples_per_pixel: 8
+Computation time (materials): 0.3171077590 s
+Total time: 0.6036080960 s
+
+rendering scene: materials
+threads: 1
+threads: 8
+image_width: 640
+samples_per_pixel: 64
+Computation time (materials): 2.4751219260 s
+Total time: 2.7845989600 s
+
+rendering scene: materials
+threads: 1
+threads: 8
+image_width: 640
+samples_per_pixel: 256
+Computation time (materials): 10.2823637770 s
+Total time: 10.6096483480 s
+
+rendering scene: materials
+threads: 1
+threads: 8
+image_width: 640
+samples_per_pixel: 512
+Computation time (materials): 24.0097707150 s
+Total time: 24.3384225470 s
+
+### grid #################
+rendering scene: grid
+threads: 1
+threads: 8
+image_width: 640
+samples_per_pixel: 8
+Computation time (grid): 0.2189248280 s
+Total time: 0.5364633060 s
+
+rendering scene: grid
+threads: 1
+threads: 8
+image_width: 640
+samples_per_pixel: 64
+Computation time (grid): 1.8363607110 s
+Total time: 2.1133394560 s
+
+rendering scene: grid
+threads: 1
+threads: 8
+image_width: 640
+samples_per_pixel: 256
+Computation time (grid): 7.8574856880 s
+Total time: 8.2004016580 s
+
+rendering scene: grid
+threads: 1
+threads: 8
+image_width: 640
+samples_per_pixel: 512
+Computation time (grid): 15.8197788910 s
+Total time: 16.1667082890 s
+
+### biglittle #################
+rendering scene: biglittle
+threads: 1
+threads: 8
+image_width: 640
+samples_per_pixel: 8
+Computation time (biglittle): 1.8522067160 s
+Total time: 2.2031458990 s
+
+rendering scene: biglittle
+threads: 1
+threads: 8
+image_width: 640
+samples_per_pixel: 64
+Computation time (biglittle): 15.6300005110 s
+Total time: 15.9215602990 s
+
+rendering scene: biglittle
+threads: 1
+threads: 8
+image_width: 640
+samples_per_pixel: 256
+Computation time (biglittle): 62.8317379300 s
+Total time: 63.1302200250 s
+
+rendering scene: biglittle
+threads: 1
+threads: 8
+image_width: 640
+samples_per_pixel: 512
+Computation time (biglittle): 125.7269923060 s
+Total time: 126.0488466580 s
+
+### color_grid #################
+rendering scene: color_grid
+threads: 1
+threads: 8
+image_width: 640
+samples_per_pixel: 8
+Computation time (color_grid): 4.0273565270 s
+Total time: 4.3512793710 s
+
+rendering scene: color_grid
+threads: 1
+threads: 8
+image_width: 640
+samples_per_pixel: 64
+Computation time (color_grid): 32.8779130370 s
+Total time: 33.2144701820 s
+
+rendering scene: color_grid
+threads: 1
+threads: 8
+image_width: 640
+samples_per_pixel: 256
+Computation time (color_grid): 134.5723171630 s
+Total time: 134.8618109520 s
+
+rendering scene: color_grid
+threads: 1
+threads: 8
+image_width: 640
+samples_per_pixel: 512
+Computation time (color_grid): 263.7683480470 s
+Total time: 264.0675386590 s
+
+### kiss #################
+rendering scene: kiss
+threads: 1
+threads: 8
+image_width: 640
+samples_per_pixel: 8
+Computation time (kiss): 0.0250619700 s
+Total time: 0.3052816400 s
+
+rendering scene: kiss
+threads: 1
+threads: 8
+image_width: 640
+samples_per_pixel: 64
+Computation time (kiss): 0.1627274500 s
+Total time: 0.4595290980 s
+
+rendering scene: kiss
+threads: 1
+threads: 8
+image_width: 640
+samples_per_pixel: 256
+Computation time (kiss): 0.6283964270 s
+Total time: 0.9202886580 s
+
+rendering scene: kiss
+threads: 1
+threads: 8
+image_width: 640
+samples_per_pixel: 512
+Computation time (kiss): 1.3957322880 s
+Total time: 1.6892844790 s
+
+===========
+## 2 core ####################################
+### simple #################
+rendering scene: simple
+threads: 1
+threads: 2
+image_width: 640
+samples_per_pixel: 8
+Computation time (simple): 0.1321516320 s
+Total time: 0.4459484860 s
+
+rendering scene: simple
+threads: 1
+threads: 2
+image_width: 640
+samples_per_pixel: 64
+Computation time (simple): 0.7960019350 s
+Total time: 1.0706954870 s
+
+rendering scene: simple
+threads: 1
+threads: 2
+image_width: 640
+samples_per_pixel: 256
+Computation time (simple): 3.0567704380 s
+Total time: 3.3430787870 s
+
+rendering scene: simple
+threads: 1
+threads: 2
+image_width: 640
+samples_per_pixel: 512
+Computation time (simple): 6.0758998760 s
+Total time: 6.3568585320 s
+
+### materials #################
+rendering scene: materials
+threads: 1
+threads: 2
+image_width: 640
+samples_per_pixel: 8
+Computation time (materials): 1.2081221520 s
+Total time: 1.4978737860 s
+
+rendering scene: materials
+threads: 1
+threads: 2
+image_width: 640
+samples_per_pixel: 64
+Computation time (materials): 9.3828086140 s
+Total time: 9.6685431640 s
+
+rendering scene: materials
+threads: 1
+threads: 2
+image_width: 640
+samples_per_pixel: 256
+Computation time (materials): 37.4705948680 s
+Total time: 37.7547567600 s
+
+rendering scene: materials
+threads: 1
+threads: 2
+image_width: 640
+samples_per_pixel: 512
+Computation time (materials): 74.9061658230 s
+Total time: 75.1979146990 s
+
+### grid #################
+rendering scene: grid
+threads: 1
+threads: 2
+image_width: 640
+samples_per_pixel: 8
+Computation time (grid): 0.8044075040 s
+Total time: 1.0899654330 s
+
+rendering scene: grid
+threads: 1
+threads: 2
+image_width: 640
+samples_per_pixel: 64
+Computation time (grid): 6.1873580740 s
+Total time: 6.4762996870 s
+
+rendering scene: grid
+threads: 1
+threads: 2
+image_width: 640
+samples_per_pixel: 256
+Computation time (grid): 24.6138227060 s
+Total time: 24.9031603760 s
+
+rendering scene: grid
+threads: 1
+threads: 2
+image_width: 640
+samples_per_pixel: 512
+Computation time (grid): 49.7612421120 s
+Total time: 50.0452632600 s
+
+### biglittle #################
+rendering scene: biglittle
+threads: 1
+threads: 2
+image_width: 640
+samples_per_pixel: 8
+Computation time (biglittle): 6.0219263630 s
+Total time: 6.2998965790 s
+
+rendering scene: biglittle
+threads: 1
+threads: 2
+image_width: 640
+samples_per_pixel: 64
+Computation time (biglittle): 47.8193933360 s
+Total time: 48.1034682880 s
+
+rendering scene: biglittle
+threads: 1
+threads: 2
+image_width: 640
+samples_per_pixel: 256
+Computation time (biglittle): 191.2072838430 s
+Total time: 191.4939542800 s
+
+rendering scene: biglittle
+threads: 1
+threads: 2
+image_width: 640
+samples_per_pixel: 512
+Computation time (biglittle): 382.1881066990 s
+Total time: 382.4822998940 s
+
+### color_grid #################
+rendering scene: color_grid
+threads: 1
+threads: 2
+image_width: 640
+samples_per_pixel: 8
+Computation time (color_grid): 13.3122934890 s
+Total time: 13.5949689160 s
+
+rendering scene: color_grid
+threads: 1
+threads: 2
+image_width: 640
+samples_per_pixel: 64
+Computation time (color_grid): 106.3285508690 s
+Total time: 106.6134762060 s
+
+rendering scene: color_grid
+threads: 1
+threads: 2
+image_width: 640
+samples_per_pixel: 256
+Computation time (color_grid): 430.8566144000 s
+Total time: 431.1413845310 s
+
+rendering scene: color_grid
+threads: 1
+threads: 2
+image_width: 640
+samples_per_pixel: 512
+Computation time (color_grid): 860.4636602820 s
+Total time: 860.7476043730 s
+
+### kiss #################
+rendering scene: kiss
+threads: 1
+threads: 2
+image_width: 640
+samples_per_pixel: 8
+Computation time (kiss): 0.1085468640 s
+Total time: 0.3941672720 s
+
+rendering scene: kiss
+threads: 1
+threads: 2
+image_width: 640
+samples_per_pixel: 64
+Computation time (kiss): 0.6269802540 s
+Total time: 0.9002698790 s
+
+rendering scene: kiss
+threads: 1
+threads: 2
+image_width: 640
+samples_per_pixel: 256
+Computation time (kiss): 2.3946998250 s
+Total time: 2.6632893540 s
+
+rendering scene: kiss
+threads: 1
+threads: 2
+image_width: 640
+samples_per_pixel: 512
+Computation time (kiss): 4.7459938400 s
+Total time: 5.0309482540 s
+
+===========
+## 4 core ####################################
+### simple #################
+rendering scene: simple
+threads: 1
+threads: 4
+image_width: 640
+samples_per_pixel: 8
+Computation time (simple): 0.0543499120 s
+Total time: 0.3399690510 s
+
+rendering scene: simple
+threads: 1
+threads: 4
+image_width: 640
+samples_per_pixel: 64
+Computation time (simple): 0.3910175650 s
+Total time: 0.6703797970 s
+
+rendering scene: simple
+threads: 1
+threads: 4
+image_width: 640
+samples_per_pixel: 256
+Computation time (simple): 1.5635863870 s
+Total time: 1.8436010090 s
+
+rendering scene: simple
+threads: 1
+threads: 4
+image_width: 640
+samples_per_pixel: 512
+Computation time (simple): 3.0955959810 s
+Total time: 3.3861021140 s
+
+### materials #################
+rendering scene: materials
+threads: 1
+threads: 4
+image_width: 640
+samples_per_pixel: 8
+Computation time (materials): 0.6111309680 s
+Total time: 0.8987206560 s
+
+rendering scene: materials
+threads: 1
+threads: 4
+image_width: 640
+samples_per_pixel: 64
+Computation time (materials): 4.8327813450 s
+Total time: 5.1174455810 s
+
+rendering scene: materials
+threads: 1
+threads: 4
+image_width: 640
+samples_per_pixel: 256
+Computation time (materials): 19.1583106400 s
+Total time: 19.4380593890 s
+
+rendering scene: materials
+threads: 1
+threads: 4
+image_width: 640
+samples_per_pixel: 512
+Computation time (materials): 39.6727756130 s
+Total time: 39.9567403490 s
+
+### grid #################
+rendering scene: grid
+threads: 1
+threads: 4
+image_width: 640
+samples_per_pixel: 8
+Computation time (grid): 0.4039335900 s
+Total time: 0.6883787140 s
+
+rendering scene: grid
+threads: 1
+threads: 4
+image_width: 640
+samples_per_pixel: 64
+Computation time (grid): 3.2047220880 s
+Total time: 3.4882100610 s
+
+rendering scene: grid
+threads: 1
+threads: 4
+image_width: 640
+samples_per_pixel: 256
+Computation time (grid): 13.0521972220 s
+Total time: 13.3432390750 s
+
+rendering scene: grid
+threads: 1
+threads: 4
+image_width: 640
+samples_per_pixel: 512
+Computation time (grid): 26.1464679510 s
+Total time: 26.4326061710 s
+
+### biglittle #################
+rendering scene: biglittle
+threads: 1
+threads: 4
+image_width: 640
+samples_per_pixel: 8
+Computation time (biglittle): 3.1784051250 s
+Total time: 3.4572997840 s
+
+rendering scene: biglittle
+threads: 1
+threads: 4
+image_width: 640
+samples_per_pixel: 64
+Computation time (biglittle): 25.5642782470 s
+Total time: 25.8440388450 s
+
+rendering scene: biglittle
+threads: 1
+threads: 4
+image_width: 640
+samples_per_pixel: 256
+Computation time (biglittle): 102.5192207090 s
+Total time: 102.8098588840 s
+
+rendering scene: biglittle
+threads: 1
+threads: 4
+image_width: 640
+samples_per_pixel: 512
+Computation time (biglittle): 205.1335673870 s
+Total time: 205.4078202710 s
+
+### color_grid #################
+rendering scene: color_grid
+threads: 1
+threads: 4
+image_width: 640
+samples_per_pixel: 8
+Computation time (color_grid): 6.8940286910 s
+Total time: 7.1769475050 s
+
+rendering scene: color_grid
+threads: 1
+threads: 4
+image_width: 640
+samples_per_pixel: 64
+Computation time (color_grid): 56.1428563610 s
+Total time: 56.4306541530 s
+
+rendering scene: color_grid
+threads: 1
+threads: 4
+image_width: 640
+samples_per_pixel: 256
+Computation time (color_grid): 225.9748941020 s
+Total time: 226.2545430360 s
+
+rendering scene: color_grid
+threads: 1
+threads: 4
+image_width: 640
+samples_per_pixel: 512
+Computation time (color_grid): 444.2175658420 s
+Total time: 444.5061198140 s
+
+### kiss #################
+rendering scene: kiss
+threads: 1
+threads: 4
+image_width: 640
+samples_per_pixel: 8
+Computation time (kiss): 0.0422492910 s
+Total time: 0.3234713700 s
+
+rendering scene: kiss
+threads: 1
+threads: 4
+image_width: 640
+samples_per_pixel: 64
+Computation time (kiss): 0.3047737560 s
+Total time: 0.5815436780 s
+
+rendering scene: kiss
+threads: 1
+threads: 4
+image_width: 640
+samples_per_pixel: 256
+Computation time (kiss): 1.2066388430 s
+Total time: 1.4808584820 s
+
+rendering scene: kiss
+threads: 1
+threads: 4
+image_width: 640
+samples_per_pixel: 512
+Computation time (kiss): 2.6252317170 s
+Total time: 2.9085085750 s
+
+===========

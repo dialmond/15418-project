@@ -1,0 +1,85 @@
+make: 'render_scatter' is up to date.
+rendering scene: color_grid
+threads: 1
+image_width: 640
+samples_per_pixel: 64
+scatter probability: 0.05
+Computation time (color_grid): 138.6972864750 s
+Total time: 138.6974806880 s
+
+rendering scene: color_grid
+threads: 8
+image_width: 640
+samples_per_pixel: 64
+scatter probability: 0.05
+Computation time (color_grid): 20.0829539740 s
+Total time: 20.0831230840 s
+
+g++ -Wall -O3 -std=c++20 -m64 -I. -fopenmp -DSCATTER_PROB=0.25 -o render_scatter main.cpp material.cpp scenes.cpp
+rendering scene: color_grid
+threads: 1
+image_width: 640
+samples_per_pixel: 64
+scatter probability: 0.25
+Computation time (color_grid): 146.0090087450 s
+Total time: 146.0092251800 s
+
+rendering scene: color_grid
+threads: 8
+image_width: 640
+samples_per_pixel: 64
+scatter probability: 0.25
+Computation time (color_grid): 21.6583599040 s
+Total time: 21.6585381160 s
+
+g++ -Wall -O3 -std=c++20 -m64 -I. -fopenmp -DSCATTER_PROB=0.5 -o render_scatter main.cpp material.cpp scenes.cpp
+rendering scene: color_grid
+threads: 1
+image_width: 640
+samples_per_pixel: 64
+scatter probability: 0.5
+Computation time (color_grid): 159.3338312140 s
+Total time: 159.3340437820 s
+
+rendering scene: color_grid
+threads: 8
+image_width: 640
+samples_per_pixel: 64
+scatter probability: 0.5
+Computation time (color_grid): 22.9794331070 s
+Total time: 22.9796125890 s
+
+g++ -Wall -O3 -std=c++20 -m64 -I. -fopenmp -DSCATTER_PROB=0.75 -o render_scatter main.cpp material.cpp scenes.cpp
+rendering scene: color_grid
+threads: 1
+image_width: 640
+samples_per_pixel: 64
+scatter probability: 0.75
+Computation time (color_grid): 176.8590086450 s
+Total time: 176.8592173900 s
+
+rendering scene: color_grid
+threads: 8
+image_width: 640
+samples_per_pixel: 64
+scatter probability: 0.75
+Computation time (color_grid): 27.6524622730 s
+Total time: 27.6526404660 s
+
+g++ -Wall -O3 -std=c++20 -m64 -I. -fopenmp -DSCATTER_PROB=0.95 -o render_scatter main.cpp material.cpp scenes.cpp
+rendering scene: color_grid
+threads: 1
+image_width: 640
+samples_per_pixel: 64
+scatter probability: 0.95
+Computation time (color_grid): 206.4310337750 s
+Total time: 206.4312006240 s
+
+rendering scene: color_grid
+threads: 8
+image_width: 640
+samples_per_pixel: 64
+scatter probability: 0.95
+Computation time (color_grid): 31.9878489850 s
+Total time: 31.9880808590 s
+

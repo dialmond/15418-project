@@ -1,0 +1,95 @@
+make: 'render_scatter' is up to date.
+rendering scene: color_grid
+threads: 1
+image_width: 640
+samples_per_pixel: 64
+max_depth: 200
+scatter probability: 0.05
+Computation time (color_grid): 124.9574933830 s
+Total time: 124.9579817080 s
+
+rendering scene: color_grid
+threads: 8
+image_width: 640
+samples_per_pixel: 64
+max_depth: 200
+scatter probability: 0.05
+Computation time (color_grid): 18.8298355810 s
+Total time: 18.8300045410 s
+
+g++ -Wall -O3 -std=c++20 -m64 -I. -fopenmp -DSCATTER_PROB=0.25 -o render_scatter main.cpp material.cpp scenes.cpp
+rendering scene: color_grid
+threads: 1
+image_width: 640
+samples_per_pixel: 64
+max_depth: 200
+scatter probability: 0.25
+Computation time (color_grid): 132.5514166080 s
+Total time: 132.5515710770 s
+
+rendering scene: color_grid
+threads: 8
+image_width: 640
+samples_per_pixel: 64
+max_depth: 200
+scatter probability: 0.25
+Computation time (color_grid): 17.5184010330 s
+Total time: 17.5186145210 s
+
+g++ -Wall -O3 -std=c++20 -m64 -I. -fopenmp -DSCATTER_PROB=0.5 -o render_scatter main.cpp material.cpp scenes.cpp
+rendering scene: color_grid
+threads: 1
+image_width: 640
+samples_per_pixel: 64
+max_depth: 200
+scatter probability: 0.5
+Computation time (color_grid): 141.5388054190 s
+Total time: 141.5389848730 s
+
+rendering scene: color_grid
+threads: 8
+image_width: 640
+samples_per_pixel: 64
+max_depth: 200
+scatter probability: 0.5
+Computation time (color_grid): 19.6804591840 s
+Total time: 19.6806812310 s
+
+g++ -Wall -O3 -std=c++20 -m64 -I. -fopenmp -DSCATTER_PROB=0.75 -o render_scatter main.cpp material.cpp scenes.cpp
+rendering scene: color_grid
+threads: 1
+image_width: 640
+samples_per_pixel: 64
+max_depth: 200
+scatter probability: 0.75
+Computation time (color_grid): 161.1620070060 s
+Total time: 161.1621760000 s
+
+rendering scene: color_grid
+threads: 8
+image_width: 640
+samples_per_pixel: 64
+max_depth: 200
+scatter probability: 0.75
+Computation time (color_grid): 21.6680458940 s
+Total time: 21.6682505580 s
+
+g++ -Wall -O3 -std=c++20 -m64 -I. -fopenmp -DSCATTER_PROB=0.95 -o render_scatter main.cpp material.cpp scenes.cpp
+rendering scene: color_grid
+threads: 1
+image_width: 640
+samples_per_pixel: 64
+max_depth: 200
+scatter probability: 0.95
+Computation time (color_grid): 180.5475050920 s
+Total time: 180.5476797910 s
+
+rendering scene: color_grid
+threads: 8
+image_width: 640
+samples_per_pixel: 64
+max_depth: 200
+scatter probability: 0.95
+Computation time (color_grid): 25.2519485110 s
+Total time: 25.2521513320 s
+

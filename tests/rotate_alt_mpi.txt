@@ -1,0 +1,105 @@
+# MPI Rotation ########################################################
+## 8 core ####################################
+### simple #################
+rendering scene: simple
+threads: 1
+threads: 8
+image_width: 640
+samples_per_pixel: 64
+rotation frames: 30
+Computation time (simple): 6.5480450860 s
+Total time: 6.8323473380 s
+
+### materials #################
+rendering scene: materials
+threads: 1
+threads: 8
+image_width: 640
+samples_per_pixel: 64
+rotation frames: 30
+Computation time (materials): 77.7966949350 s
+Total time: 78.0805098140 s
+
+### grid #################
+rendering scene: grid
+threads: 1
+threads: 8
+image_width: 640
+samples_per_pixel: 64
+rotation frames: 30
+Computation time (grid): 63.0664386870 s
+Total time: 63.3475835560 s
+
+### biglittle #################
+rendering scene: biglittle
+threads: 1
+threads: 8
+image_width: 640
+samples_per_pixel: 64
+rotation frames: 30
+Computation time (biglittle): 502.1099664790 s
+Total time: 502.3920319710 s
+
+### color_grid #################
+rendering scene: color_grid
+threads: 1
+threads: 8
+image_width: 640
+samples_per_pixel: 64
+rotation frames: 30
+Computation time (color_grid): 1094.0752024390 s
+Total time: 1094.3593698680 s
+
+===========
+## 1 core ####################################
+### simple #################
+rendering scene: simple
+threads: 1
+threads: 1
+image_width: 640
+samples_per_pixel: 64
+rotation frames: 30
+Computation time (simple): 46.5531345280 s
+Total time: 46.8117341170 s
+
+### materials #################
+rendering scene: materials
+threads: 1
+threads: 1
+image_width: 640
+samples_per_pixel: 64
+rotation frames: 30
+Computation time (materials): 479.8630514630 s
+Total time: 480.1398131350 s
+
+### grid #################
+rendering scene: grid
+threads: 1
+threads: 1
+image_width: 640
+samples_per_pixel: 64
+rotation frames: 30
+Computation time (grid): 370.5008040740 s
+Total time: 370.7594267550 s
+
+### biglittle #################
+rendering scene: biglittle
+threads: 1
+threads: 1
+image_width: 640
+samples_per_pixel: 64
+rotation frames: 30
+Computation time (biglittle): 2969.4206105970 s
+Total time: 2969.6802354300 s
+
+### color_grid #################
+rendering scene: color_grid
+threads: 1
+threads: 1
+image_width: 640
+samples_per_pixel: 64
+rotation frames: 30
+Computation time (color_grid): 6978.5244201710 s
+Total time: 6978.8017191340 s
+
+===========

@@ -1,0 +1,9 @@
+*.ppm
+*.gif
+render
+render_mpi
+demo
+compare
+
+*.o
+*.swp

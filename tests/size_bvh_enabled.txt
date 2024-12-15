@@ -1,0 +1,324 @@
+# OMP SIZE ########################################################
+## 1 core ####################################
+### grid #################
+rendering scene: grid
+threads: 1
+image_width: 640
+samples_per_pixel: 64
+size: 1
+Computation time (grid): 0.5005939740 s
+Total time: 0.5006820720 s
+
+rendering scene: grid
+threads: 1
+image_width: 640
+samples_per_pixel: 64
+size: 2
+Computation time (grid): 1.0294869080 s
+Total time: 1.0295782790 s
+
+rendering scene: grid
+threads: 1
+image_width: 640
+samples_per_pixel: 64
+size: 5
+Computation time (grid): 6.3887469280 s
+Total time: 6.3888863290 s
+
+rendering scene: grid
+threads: 1
+image_width: 640
+samples_per_pixel: 64
+size: 10
+Computation time (grid): 21.1929405900 s
+Total time: 21.1934709210 s
+
+### color_grid #################
+rendering scene: color_grid
+threads: 1
+image_width: 640
+samples_per_pixel: 64
+size: 1
+Computation time (color_grid): 0.4750073750 s
+Total time: 0.4750979840 s
+
+rendering scene: color_grid
+threads: 1
+image_width: 640
+samples_per_pixel: 64
+size: 2
+Computation time (color_grid): 1.4917724360 s
+Total time: 1.4918721800 s
+
+rendering scene: color_grid
+threads: 1
+image_width: 640
+samples_per_pixel: 64
+size: 5
+Computation time (color_grid): 23.0011796840 s
+Total time: 23.0013600400 s
+
+rendering scene: color_grid
+threads: 1
+image_width: 640
+samples_per_pixel: 64
+size: 10
+Computation time (color_grid): 255.5140637440 s
+Total time: 255.5149590990 s
+
+===========
+## 8 core ####################################
+### grid #################
+rendering scene: grid
+threads: 8
+image_width: 640
+samples_per_pixel: 64
+size: 1
+Computation time (grid): 0.8363286770 s
+Total time: 0.8364839130 s
+
+rendering scene: grid
+threads: 8
+image_width: 640
+samples_per_pixel: 64
+size: 2
+Computation time (grid): 1.1237435080 s
+Total time: 1.1238388940 s
+
+rendering scene: grid
+threads: 8
+image_width: 640
+samples_per_pixel: 64
+size: 5
+Computation time (grid): 1.7919252640 s
+Total time: 1.7920809930 s
+
+rendering scene: grid
+threads: 8
+image_width: 640
+samples_per_pixel: 64
+size: 10
+Computation time (grid): 3.4868787450 s
+Total time: 3.4874149750 s
+
+### color_grid #################
+rendering scene: color_grid
+threads: 8
+image_width: 640
+samples_per_pixel: 64
+size: 1
+Computation time (color_grid): 0.7572224550 s
+Total time: 0.7573175270 s
+
+rendering scene: color_grid
+threads: 8
+image_width: 640
+samples_per_pixel: 64
+size: 2
+Computation time (color_grid): 0.9458448250 s
+Total time: 0.9459409480 s
+
+rendering scene: color_grid
+threads: 8
+image_width: 640
+samples_per_pixel: 64
+size: 5
+Computation time (color_grid): 3.3050637470 s
+Total time: 3.3052590540 s
+
+rendering scene: color_grid
+threads: 8
+image_width: 640
+samples_per_pixel: 64
+size: 10
+Computation time (color_grid): 41.2806112720 s
+Total time: 41.2816148930 s
+
+===========
+
+
+# MPI SIZE ########################################################
+## 1 core ####################################
+### grid #################
+Authorization required, but no authorization protocol specified
+Authorization required, but no authorization protocol specified
+rendering scene: grid
+threads: 1
+threads: 1
+image_width: 640
+samples_per_pixel: 64
+size: 1
+Computation time (grid): 0.5105524500 s
+Total time: 0.7673991030 s
+
+Authorization required, but no authorization protocol specified
+Authorization required, but no authorization protocol specified
+rendering scene: grid
+threads: 1
+threads: 1
+image_width: 640
+samples_per_pixel: 64
+size: 2
+Computation time (grid): 1.0545366480 s
+Total time: 1.3121432730 s
+
+Authorization required, but no authorization protocol specified
+Authorization required, but no authorization protocol specified
+rendering scene: grid
+threads: 1
+threads: 1
+image_width: 640
+samples_per_pixel: 64
+size: 5
+Computation time (grid): 6.6105429490 s
+Total time: 6.8873470490 s
+
+Authorization required, but no authorization protocol specified
+Authorization required, but no authorization protocol specified
+rendering scene: grid
+threads: 1
+threads: 1
+image_width: 640
+samples_per_pixel: 64
+size: 10
+Computation time (grid): 21.8226537790 s
+Total time: 22.0833466580 s
+
+### color_grid #################
+Authorization required, but no authorization protocol specified
+Authorization required, but no authorization protocol specified
+rendering scene: color_grid
+threads: 1
+threads: 1
+image_width: 640
+samples_per_pixel: 64
+size: 1
+Computation time (color_grid): 0.4804834050 s
+Total time: 0.7395241030 s
+
+Authorization required, but no authorization protocol specified
+Authorization required, but no authorization protocol specified
+rendering scene: color_grid
+threads: 1
+threads: 1
+image_width: 640
+samples_per_pixel: 64
+size: 2
+Computation time (color_grid): 1.4832694810 s
+Total time: 1.7433605600 s
+
+Authorization required, but no authorization protocol specified
+Authorization required, but no authorization protocol specified
+rendering scene: color_grid
+threads: 1
+threads: 1
+image_width: 640
+samples_per_pixel: 64
+size: 5
+Computation time (color_grid): 24.1391355440 s
+Total time: 24.4153547340 s
+
+Authorization required, but no authorization protocol specified
+Authorization required, but no authorization protocol specified
+rendering scene: color_grid
+threads: 1
+threads: 1
+image_width: 640
+samples_per_pixel: 64
+size: 10
+Computation time (color_grid): 218.9148338770 s
+Total time: 219.1913021160 s
+
+===========
+## 8 core ####################################
+### grid #################
+Authorization required, but no authorization protocol specified
+Authorization required, but no authorization protocol specified
+rendering scene: grid
+threads: 1
+threads: 8
+image_width: 640
+samples_per_pixel: 64
+size: 1
+Computation time (grid): 0.0825436770 s
+Total time: 0.3640427050 s
+
+Authorization required, but no authorization protocol specified
+Authorization required, but no authorization protocol specified
+rendering scene: grid
+threads: 1
+threads: 8
+image_width: 640
+samples_per_pixel: 64
+size: 2
+Computation time (grid): 0.1574857010 s
+Total time: 0.4281253280 s
+
+Authorization required, but no authorization protocol specified
+Authorization required, but no authorization protocol specified
+rendering scene: grid
+threads: 1
+threads: 8
+image_width: 640
+samples_per_pixel: 64
+size: 5
+Computation time (grid): 0.9454619750 s
+Total time: 1.2169001140 s
+
+Authorization required, but no authorization protocol specified
+Authorization required, but no authorization protocol specified
+rendering scene: grid
+threads: 1
+threads: 8
+image_width: 640
+samples_per_pixel: 64
+size: 10
+Computation time (grid): 3.0247240520 s
+Total time: 3.3119281530 s
+
+### color_grid #################
+Authorization required, but no authorization protocol specified
+Authorization required, but no authorization protocol specified
+rendering scene: color_grid
+threads: 1
+threads: 8
+image_width: 640
+samples_per_pixel: 64
+size: 1
+Computation time (color_grid): 0.0719542430 s
+Total time: 0.3601250800 s
+
+Authorization required, but no authorization protocol specified
+Authorization required, but no authorization protocol specified
+rendering scene: color_grid
+threads: 1
+threads: 8
+image_width: 640
+samples_per_pixel: 64
+size: 2
+Computation time (color_grid): 0.2058158370 s
+Total time: 0.4761757420 s
+
+Authorization required, but no authorization protocol specified
+Authorization required, but no authorization protocol specified
+rendering scene: color_grid
+threads: 1
+threads: 8
+image_width: 640
+samples_per_pixel: 64
+size: 5
+Computation time (color_grid): 3.1912715490 s
+Total time: 3.4598610210 s
+
+Authorization required, but no authorization protocol specified
+Authorization required, but no authorization protocol specified
+rendering scene: color_grid
+threads: 1
+threads: 8
+image_width: 640
+samples_per_pixel: 64
+size: 10
+Computation time (color_grid): 38.6173641800 s
+Total time: 38.9035113630 s
+
+===========

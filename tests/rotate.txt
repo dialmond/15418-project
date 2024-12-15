@@ -1,0 +1,162 @@
+# OMP Rotation ########################################################
+## 1 core ####################################
+### materials #################
+rendering scene: materials
+threads: 1
+image_width: 640
+samples_per_pixel: 64
+rotation frames: 30
+Computation time (materials): 473.1037630160 s
+Total time: 473.1038318550 s
+
+### grid #################
+rendering scene: grid
+threads: 1
+image_width: 640
+samples_per_pixel: 64
+rotation frames: 30
+Computation time (grid): 369.5493471980 s
+Total time: 369.5493859400 s
+
+### biglittle #################
+rendering scene: biglittle
+threads: 1
+image_width: 640
+samples_per_pixel: 64
+rotation frames: 30
+Computation time (biglittle): 2951.4553193790 s
+Total time: 2951.4554093020 s
+
+### color_grid #################
+rendering scene: color_grid
+threads: 1
+image_width: 640
+samples_per_pixel: 64
+rotation frames: 30
+Computation time (color_grid): 6821.6988387070 s
+Total time: 6821.6989179280 s
+
+===========
+## 8 core ####################################
+### materials #################
+rendering scene: materials
+threads: 8
+image_width: 640
+samples_per_pixel: 64
+rotation frames: 30
+Computation time (materials): 110.6335019540 s
+Total time: 110.6335580280 s
+
+### grid #################
+rendering scene: grid
+threads: 8
+image_width: 640
+samples_per_pixel: 64
+rotation frames: 30
+Computation time (grid): 82.4482690040 s
+Total time: 82.4482983500 s
+
+### biglittle #################
+rendering scene: biglittle
+threads: 8
+image_width: 640
+samples_per_pixel: 64
+rotation frames: 30
+Computation time (biglittle): 512.6083117270 s
+Total time: 512.6084073270 s
+
+### color_grid #################
+rendering scene: color_grid
+threads: 8
+image_width: 640
+samples_per_pixel: 64
+rotation frames: 30
+Computation time (color_grid): 1090.5551468020 s
+Total time: 1090.5552477890 s
+
+===========
+# MPI Rotation ########################################################
+## 1 core ####################################
+### materials #################
+rendering scene: materials
+threads: 1
+threads: 1
+image_width: 640
+samples_per_pixel: 64
+rotation frames: 30
+Computation time (materials): 471.1282386780 s
+Total time: 471.4315986150 s
+
+### grid #################
+rendering scene: grid
+threads: 1
+threads: 1
+image_width: 640
+samples_per_pixel: 64
+rotation frames: 30
+Computation time (grid): 368.3544900850 s
+Total time: 368.6199851190 s
+
+### biglittle #################
+rendering scene: biglittle
+threads: 1
+threads: 1
+image_width: 640
+samples_per_pixel: 64
+rotation frames: 30
+Computation time (biglittle): 2928.6791947690 s
+Total time: 2928.9463289630 s
+
+### color_grid #################
+rendering scene: color_grid
+threads: 1
+threads: 1
+image_width: 640
+samples_per_pixel: 64
+rotation frames: 30
+Computation time (color_grid): 6823.9384164770 s
+Total time: 6824.2076763480 s
+
+===========
+## 8 core ####################################
+### materials #################
+rendering scene: materials
+threads: 1
+threads: 8
+image_width: 640
+samples_per_pixel: 64
+rotation frames: 30
+Computation time (materials): 76.5574786150 s
+Total time: 76.8368910470 s
+
+### grid #################
+rendering scene: grid
+threads: 1
+threads: 8
+image_width: 640
+samples_per_pixel: 64
+rotation frames: 30
+Computation time (grid): 62.1935832650 s
+Total time: 62.4816569860 s
+
+### biglittle #################
+rendering scene: biglittle
+threads: 1
+threads: 8
+image_width: 640
+samples_per_pixel: 64
+rotation frames: 30
+Computation time (biglittle): 498.8193005740 s
+Total time: 499.0925164730 s
+
+### color_grid #################
+rendering scene: color_grid
+threads: 1
+threads: 8
+image_width: 640
+samples_per_pixel: 64
+rotation frames: 30
+Computation time (color_grid): 1085.8437625840 s
+Total time: 1086.1340519700 s
+
+===========

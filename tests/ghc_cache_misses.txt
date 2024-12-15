@@ -1,0 +1,419 @@
+rm -f render
+rm -f *.o
+g++ -Wall -O3 -std=c++20 -m64 -I. -fopenmp  -o render main.cpp material.cpp scenes.cpp
+mpic++ -Wall -O3 -std=c++20 -m64 -I. -DP_MPI=1 -c -o main.o main.cpp
+mpic++ -Wall -O3 -std=c++20 -m64 -I. -DP_MPI=1 -c -o material.o material.cpp
+mpic++ -Wall -O3 -std=c++20 -m64 -I. -DP_MPI=1 -c -o scenes.o scenes.cpp
+mpic++ -Wall -O3 -std=c++20 -m64 -I. -DP_MPI=1 -o render_mpi main.o material.o scenes.o
+# OMP GHC ########################################################
+### materials ###############################
+rendering scene: materials
+threads: 1
+image_width: 640
+samples_per_pixel: 64
+Computation time (materials): 10.4855427230 s
+Total time: 10.4856941740 s
+
+
+ Performance counter stats for './render materials --samples-per-pixel 64 --image-width 640 --num-threads 1 --no-write --use-bvh':
+
+           152,176      cache-misses                                                
+
+      10.486859863 seconds time elapsed
+
+      10.486058000 seconds user
+       0.000000000 seconds sys
+
+
+rendering scene: materials
+threads: 8
+image_width: 640
+samples_per_pixel: 64
+Computation time (materials): 2.9641323410 s
+Total time: 2.9642663210 s
+
+
+ Performance counter stats for './render materials --samples-per-pixel 64 --image-width 640 --num-threads 8 --no-write --use-bvh':
+
+           149,233      cache-misses                                                
+
+       2.965264321 seconds time elapsed
+
+      23.711201000 seconds user
+       0.000000000 seconds sys
+
+
+===========
+### grid ###############################
+rendering scene: grid
+threads: 1
+image_width: 640
+samples_per_pixel: 64
+Computation time (grid): 6.3875835080 s
+Total time: 6.3877206370 s
+
+
+ Performance counter stats for './render grid --samples-per-pixel 64 --image-width 640 --num-threads 1 --no-write --use-bvh':
+
+           109,680      cache-misses                                                
+
+       6.388742266 seconds time elapsed
+
+       6.384637000 seconds user
+       0.003997000 seconds sys
+
+
+rendering scene: grid
+threads: 8
+image_width: 640
+samples_per_pixel: 64
+Computation time (grid): 1.7516553660 s
+Total time: 1.7518497810 s
+
+
+ Performance counter stats for './render grid --samples-per-pixel 64 --image-width 640 --num-threads 8 --no-write --use-bvh':
+
+           143,732      cache-misses                                                
+
+       1.752842640 seconds time elapsed
+
+      14.009984000 seconds user
+       0.003999000 seconds sys
+
+
+===========
+### biglittle ###############################
+rendering scene: biglittle
+threads: 1
+image_width: 640
+samples_per_pixel: 64
+Computation time (biglittle): 12.8045622240 s
+Total time: 12.8052359270 s
+
+
+ Performance counter stats for './render biglittle --samples-per-pixel 64 --image-width 640 --num-threads 1 --no-write --use-bvh':
+
+           112,496      cache-misses                                                
+
+      12.806201742 seconds time elapsed
+
+      12.805927000 seconds user
+       0.000000000 seconds sys
+
+
+rendering scene: biglittle
+threads: 8
+image_width: 640
+samples_per_pixel: 64
+Computation time (biglittle): 2.2637990390 s
+Total time: 2.2644849230 s
+
+
+ Performance counter stats for './render biglittle --samples-per-pixel 64 --image-width 640 --num-threads 8 --no-write --use-bvh':
+
+           139,091      cache-misses                                                
+
+       2.265475623 seconds time elapsed
+
+      18.109120000 seconds user
+       0.000000000 seconds sys
+
+
+===========
+### color_grid ###############################
+rendering scene: color_grid
+threads: 1
+image_width: 640
+samples_per_pixel: 64
+Computation time (color_grid): 24.2835701300 s
+Total time: 24.2837507500 s
+
+
+ Performance counter stats for './render color_grid --samples-per-pixel 64 --image-width 640 --num-threads 1 --no-write --use-bvh':
+
+           114,214      cache-misses                                                
+
+      24.284791989 seconds time elapsed
+
+      24.282432000 seconds user
+       0.000000000 seconds sys
+
+
+rendering scene: color_grid
+threads: 8
+image_width: 640
+samples_per_pixel: 64
+Computation time (color_grid): 3.8467161440 s
+Total time: 3.8469264270 s
+
+
+ Performance counter stats for './render color_grid --samples-per-pixel 64 --image-width 640 --num-threads 8 --no-write --use-bvh':
+
+           152,370      cache-misses                                                
+
+       3.847955571 seconds time elapsed
+
+      30.772681000 seconds user
+       0.000000000 seconds sys
+
+
+===========
+### simple ###############################
+rendering scene: simple
+threads: 1
+image_width: 640
+samples_per_pixel: 64
+Computation time (simple): 1.7636196120 s
+Total time: 1.7637059180 s
+
+
+ Performance counter stats for './render simple --samples-per-pixel 64 --image-width 640 --num-threads 1 --no-write --use-bvh':
+
+            97,510      cache-misses                                                
+
+       1.764697743 seconds time elapsed
+
+       1.764698000 seconds user
+       0.000000000 seconds sys
+
+
+rendering scene: simple
+threads: 8
+image_width: 640
+samples_per_pixel: 64
+Computation time (simple): 1.7703157000 s
+Total time: 1.7704127580 s
+
+
+ Performance counter stats for './render simple --samples-per-pixel 64 --image-width 640 --num-threads 8 --no-write --use-bvh':
+
+           143,052      cache-misses                                                
+
+       1.771390901 seconds time elapsed
+
+      14.161478000 seconds user
+       0.000000000 seconds sys
+
+
+===========
+# MPI GHC ########################################################
+### materials ###############################
+Authorization required, but no authorization protocol specified
+Authorization required, but no authorization protocol specified
+rendering scene: materials
+threads: 1
+threads: 1
+image_width: 640
+samples_per_pixel: 64
+Computation time (materials): 10.8549872470 s
+Total time: 11.1313520220 s
+
+
+ Performance counter stats for 'mpirun -np 1 ./render_mpi materials --samples-per-pixel 64 --image-width 640 --num-threads 1 --no-write --use-bvh':
+
+         2,689,459      cache-misses                                                
+
+      11.214737828 seconds time elapsed
+
+      10.874252000 seconds user
+       0.043536000 seconds sys
+
+
+Authorization required, but no authorization protocol specified
+Authorization required, but no authorization protocol specified
+rendering scene: materials
+threads: 8
+threads: 8
+image_width: 640
+samples_per_pixel: 64
+Computation time (materials): 1.4813580200 s
+Total time: 1.7639425600 s
+
+
+ Performance counter stats for 'mpirun -np 8 ./render_mpi materials --samples-per-pixel 64 --image-width 640 --num-threads 8 --no-write --use-bvh':
+
+         7,274,910      cache-misses                                                
+
+       1.868142913 seconds time elapsed
+
+      11.940537000 seconds user
+       0.089632000 seconds sys
+
+
+===========
+### grid ###############################
+Authorization required, but no authorization protocol specified
+Authorization required, but no authorization protocol specified
+rendering scene: grid
+threads: 1
+threads: 1
+image_width: 640
+samples_per_pixel: 64
+Computation time (grid): 6.6141637500 s
+Total time: 6.8912566140 s
+
+
+ Performance counter stats for 'mpirun -np 1 ./render_mpi grid --samples-per-pixel 64 --image-width 640 --num-threads 1 --no-write --use-bvh':
+
+         2,658,577      cache-misses                                                
+
+       6.972198221 seconds time elapsed
+
+       6.633918000 seconds user
+       0.043235000 seconds sys
+
+
+Authorization required, but no authorization protocol specified
+Authorization required, but no authorization protocol specified
+rendering scene: grid
+threads: 8
+threads: 8
+image_width: 640
+samples_per_pixel: 64
+Computation time (grid): 0.9599570020 s
+Total time: 1.2435474810 s
+
+
+ Performance counter stats for 'mpirun -np 8 ./render_mpi grid --samples-per-pixel 64 --image-width 640 --num-threads 8 --no-write --use-bvh':
+
+         7,296,714      cache-misses                                                
+
+       1.327808487 seconds time elapsed
+
+       7.688858000 seconds user
+       0.099926000 seconds sys
+
+
+===========
+### biglittle ###############################
+Authorization required, but no authorization protocol specified
+Authorization required, but no authorization protocol specified
+rendering scene: biglittle
+threads: 1
+threads: 1
+image_width: 640
+samples_per_pixel: 64
+Computation time (biglittle): 13.0475007830 s
+Total time: 13.3234218620 s
+
+
+ Performance counter stats for 'mpirun -np 1 ./render_mpi biglittle --samples-per-pixel 64 --image-width 640 --num-threads 1 --no-write --use-bvh':
+
+         2,663,433      cache-misses                                                
+
+      13.404125032 seconds time elapsed
+
+      13.068569000 seconds user
+       0.042562000 seconds sys
+
+
+Authorization required, but no authorization protocol specified
+Authorization required, but no authorization protocol specified
+rendering scene: biglittle
+threads: 8
+threads: 8
+image_width: 640
+samples_per_pixel: 64
+Computation time (biglittle): 1.7808111910 s
+Total time: 2.0639637510 s
+
+
+ Performance counter stats for 'mpirun -np 8 ./render_mpi biglittle --samples-per-pixel 64 --image-width 640 --num-threads 8 --no-write --use-bvh':
+
+         7,213,286      cache-misses                                                
+
+       2.150042882 seconds time elapsed
+
+      14.256623000 seconds user
+       0.102682000 seconds sys
+
+
+===========
+### color_grid ###############################
+Authorization required, but no authorization protocol specified
+Authorization required, but no authorization protocol specified
+rendering scene: color_grid
+threads: 1
+threads: 1
+image_width: 640
+samples_per_pixel: 64
+Computation time (color_grid): 27.5132038150 s
+Total time: 27.7709870740 s
+
+
+ Performance counter stats for 'mpirun -np 1 ./render_mpi color_grid --samples-per-pixel 64 --image-width 640 --num-threads 1 --no-write --use-bvh':
+
+         2,663,459      cache-misses                                                
+
+      27.854884258 seconds time elapsed
+
+      27.542766000 seconds user
+       0.033412000 seconds sys
+
+
+Authorization required, but no authorization protocol specified
+Authorization required, but no authorization protocol specified
+rendering scene: color_grid
+threads: 8
+threads: 8
+image_width: 640
+samples_per_pixel: 64
+Computation time (color_grid): 3.7044657580 s
+Total time: 3.9876489220 s
+
+
+ Performance counter stats for 'mpirun -np 8 ./render_mpi color_grid --samples-per-pixel 64 --image-width 640 --num-threads 8 --no-write --use-bvh':
+
+         7,192,062      cache-misses                                                
+
+       4.090741957 seconds time elapsed
+
+      26.972069000 seconds user
+       0.117841000 seconds sys
+
+
+===========
+### simple ###############################
+Authorization required, but no authorization protocol specified
+Authorization required, but no authorization protocol specified
+rendering scene: simple
+threads: 1
+threads: 1
+image_width: 640
+samples_per_pixel: 64
+Computation time (simple): 1.8335439710 s
+Total time: 2.1113020860 s
+
+
+ Performance counter stats for 'mpirun -np 1 ./render_mpi simple --samples-per-pixel 64 --image-width 640 --num-threads 1 --no-write --use-bvh':
+
+         2,661,880      cache-misses                                                
+
+       2.193053816 seconds time elapsed
+
+       1.854076000 seconds user
+       0.042609000 seconds sys
+
+
+Authorization required, but no authorization protocol specified
+Authorization required, but no authorization protocol specified
+rendering scene: simple
+threads: 8
+threads: 8
+image_width: 640
+samples_per_pixel: 64
+Computation time (simple): 0.2580835440 s
+Total time: 0.5358045450 s
+
+
+ Performance counter stats for 'mpirun -np 8 ./render_mpi simple --samples-per-pixel 64 --image-width 640 --num-threads 8 --no-write --use-bvh':
+
+         7,419,473      cache-misses                                                
+
+       0.639817702 seconds time elapsed
+
+       2.110998000 seconds user
+       0.103791000 seconds sys
+
+
+===========

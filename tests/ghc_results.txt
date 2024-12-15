@@ -1,0 +1,145 @@
+rm -f render
+rm -f *.o
+g++ -Wall -O3 -std=c++20 -m64 -I. -fopenmp  -o render main.cpp material.cpp scenes.cpp
+mpic++ -Wall -O3 -std=c++20 -m64 -I. -DP_MPI=1 -c -o main.o main.cpp
+mpic++ -Wall -O3 -std=c++20 -m64 -I. -DP_MPI=1 -c -o material.o material.cpp
+mpic++ -Wall -O3 -std=c++20 -m64 -I. -DP_MPI=1 -c -o scenes.o scenes.cpp
+mpic++ -Wall -O3 -std=c++20 -m64 -I. -DP_MPI=1 -o render_mpi main.o material.o scenes.o
+# OMP PSC ########################################################
+### materials ###############################
+rendering scene: materials
+threads: 1
+image_width: 640
+samples_per_pixel: 64
+Computation time (materials): 18.2597265390 s
+Total time: 18.2599283290 s
+
+rendering scene: materials
+threads: 8
+image_width: 640
+samples_per_pixel: 64
+Computation time (materials): 3.0283993680 s
+Total time: 3.0285058240 s
+
+===========
+### grid ###############################
+rendering scene: grid
+threads: 1
+image_width: 640
+samples_per_pixel: 64
+Computation time (grid): 12.0975341300 s
+Total time: 12.0976419680 s
+
+rendering scene: grid
+threads: 8
+image_width: 640
+samples_per_pixel: 64
+Computation time (grid): 1.9892552530 s
+Total time: 1.9893543330 s
+
+===========
+### biglittle ###############################
+rendering scene: biglittle
+threads: 1
+image_width: 640
+samples_per_pixel: 64
+Computation time (biglittle): 93.6954299080 s
+Total time: 93.6956088270 s
+
+rendering scene: biglittle
+threads: 8
+image_width: 640
+samples_per_pixel: 64
+Computation time (biglittle): 12.7927434370 s
+Total time: 12.7929435720 s
+
+===========
+### color_grid ###############################
+rendering scene: color_grid
+threads: 1
+image_width: 640
+samples_per_pixel: 64
+Computation time (color_grid): 189.5346860800 s
+Total time: 189.5348541920 s
+
+rendering scene: color_grid
+threads: 8
+image_width: 640
+samples_per_pixel: 64
+Computation time (color_grid): 28.0637000650 s
+Total time: 28.0639169920 s
+
+===========
+# MPI PSC ########################################################
+### materials ###############################
+rendering scene: materials
+threads: 1
+threads: 1
+image_width: 640
+samples_per_pixel: 64
+Computation time (materials): 18.0956592510 s
+Total time: 18.4427736490 s
+
+rendering scene: materials
+threads: 8
+threads: 8
+image_width: 640
+samples_per_pixel: 64
+Computation time (materials): 2.4532957580 s
+Total time: 2.7422190800 s
+
+===========
+### grid ###############################
+rendering scene: grid
+threads: 1
+threads: 1
+image_width: 640
+samples_per_pixel: 64
+Computation time (grid): 12.0280167500 s
+Total time: 12.3453476200 s
+
+rendering scene: grid
+threads: 8
+threads: 8
+image_width: 640
+samples_per_pixel: 64
+Computation time (grid): 1.6514995330 s
+Total time: 1.9339436070 s
+
+===========
+### biglittle ###############################
+rendering scene: biglittle
+threads: 1
+threads: 1
+image_width: 640
+samples_per_pixel: 64
+Computation time (biglittle): 92.1954308420 s
+Total time: 92.5197309990 s
+
+rendering scene: biglittle
+threads: 8
+threads: 8
+image_width: 640
+samples_per_pixel: 64
+Computation time (biglittle): 12.6009281760 s
+Total time: 12.8927711830 s
+
+===========
+### color_grid ###############################
+rendering scene: color_grid
+threads: 1
+threads: 1
+image_width: 640
+samples_per_pixel: 64
+Computation time (color_grid): 187.1884302720 s
+Total time: 187.5071502430 s
+
+rendering scene: color_grid
+threads: 8
+threads: 8
+image_width: 640
+samples_per_pixel: 64
+Computation time (color_grid): 26.5499932050 s
+Total time: 26.8444890120 s
+
+===========
