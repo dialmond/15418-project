@@ -27,14 +27,18 @@
       line-height: 1.2;
       padding: 0 1rem;
     }
-    a, a:visited, a:hover {
+    a:not(.shadow), a:visited, a:not(.shadow):hover {
       color: var(--link);
       font-weight: bold;
       font-size: 1.1em;
     }
-    a:hover {
+    a:not(.shadow):hover {
       text-shadow: 1rem 1rem var(--text);
       letter-spacing: 2px;
+    }
+    a.shadow {
+      color: var(--text);
+      text-decoration: none;
     }
     main {
       max-width: 45rem;
@@ -95,7 +99,8 @@
   <main>
     <span class='marquee'>~* 15418 Project *~</span>
     <h1>Parallel Monte Carlo Path Tracing</h1>
-    <p><span class='shadow' data-text="Cassidy Diamond">Cassidy Diamond</span> and <span class='shadow' data-text="Akintayo Salu">Akintayo Salu</span></p>
+    <p><a href="/" class='shadow'><span class='shadow' data-text="Cassidy Diamond">Cassidy Diamond</span></a> and <span class='shadow' data-text="Akintayo Salu">Akintayo Salu</span></p>
+    <p><a href="https://github.com/dialmond/15418-project">View the final code on GitHub</a></p>
     <ul>
       <li><a href="proposal.pdf">Project Proposal</a></li>
       <li>
